@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('addition') {
+            steps {
+              script{
+                int a=5
+                int b=10
+                int sum=a+b
+                echo 'sum of ${a} and ${b} is ${sum}'
+               // sh "exit 1"
+            }
+            }
+        }
+    
+}
+}
